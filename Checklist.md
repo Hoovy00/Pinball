@@ -3,7 +3,7 @@
  - ~~2D Hönnun fyrir laserskurð.~~
  - Samsettning á kassa og Playfield (veggir, hindranir og brautir).
  - Plunger (handafl).
- - 2 x Flippers (handafl eða takkastýrt)
+ - 2 x Flippers (handafl)
  - Ljósasýning með leds, NeoPixel, RGB LED strip (kóðavirkni, samsettning, lóðun).
  - Slingshot með servo (~~kóðavirkni~~, samsettning, lóðun).
  - Hringekkja með stepper mótor (~~kóðavirkni~~, samsettning, lóðun).
