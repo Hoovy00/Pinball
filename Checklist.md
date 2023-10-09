@@ -1,6 +1,6 @@
 # Pinball
 
- - 2D Hönnun fyrir laserskurð. 10%
+ - ~~2D Hönnun fyrir laserskurð.~~
  - Samsettning á kassa og Playfield (veggir, hindranir og brautir). 10%
  - Plunger (handafl). 10%
  - 2 x Flippers (handafl eða takkastýrt) 10%
