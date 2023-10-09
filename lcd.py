@@ -14,7 +14,7 @@ else:
         lcd = I2cLcd(i2c, device, 2, 16)
 try:
     lcd.move_to(0, 0)
-    lcd.putstr("HELLO,WORLD!!!!!")
+    lcd.putstr("___") # breyta
     count = 0
     while True:
         lcd.move_to(0, 1)
