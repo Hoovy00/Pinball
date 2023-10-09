@@ -8,5 +8,5 @@
  - Slingshot með servo (~~kóðavirkni~~, samsettning, lóðun).
  - Hringekkja með stepper mótor (~~kóðavirkni~~, samsettning, lóðun).
  - OLED skjár sem sýnir skor (~~kóðavirkni~~, samsettning, lóðun).
- - Snertireitir (ljósviðnám, limit switch, reed switch) sem gefa stig (kóðavirkni, samsettning, lóðun).
+ - Snertireitir (ljósviðnám) sem gefa stig (kóðavirkni, samsettning, lóðun).
  - Hljóð og tónlist (kóðavirkni, samsettning, lóðun).
