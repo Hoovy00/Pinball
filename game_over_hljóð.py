@@ -15,7 +15,7 @@ tones = {
 "AS7": 3729,"B7": 3951,"C8": 4186,"CS8": 4435,"D8": 4699,"DS8": 4978
 }
 
-game_over = ["", "", "", "", "", ""]
+game_over = ["F5", "E5", "G4", "A4", "A4", "A4"]
 
 def playtone(frequency):
     buzzer.duty_u16(1000)
