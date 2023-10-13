@@ -50,3 +50,6 @@ sensor = Sensor()
 
 _thread.start_new_thread(motors.step_motor_thread, ())
 _thread.start_new_thread(motors.servo_motor_thread, ())
+
+while True:
+    sensor.sensor_thread()
