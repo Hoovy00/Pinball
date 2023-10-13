@@ -5,24 +5,26 @@ from machine import Pin, ADC, PWM
 import time
 import random
 
-class MotorsAndSensor(object):
-    def __init__(self):
-        pass
+class Motors(object):
   
     def step_motor_thread(self):  # stepmotor thread
-        myStepMotor = mystepmotor(14, 13, 12, 11)
-        myStepMotor.moveSteps(1, 96 * 64, 3000)
-        time.sleep_ms(100)
+        while True:
+            myStepMotor = mystepmotor(14, 13, 12, 11)
+            myStepMotor.moveSteps(1, 96 * 64, 3000)
+            time.sleep_ms(100)
             
     def servo_motor_thread(self):  # servo motor thread
-        motor = Servo(pin=21)
-        motor.move(60)
-        time.sleep(0.005)
-        motor.move(120)
-        time.sleep(0.005)
-        motor.move(60)
-        random_sleep_time = random.randint(1, 3)
-        time.sleep(random_sleep_time)
+        while True:
+            motor = Servo(pin=21)
+            motor.move(60)
+            time.sleep(0.005)
+            motor.move(120)
+            time.sleep(0.005)
+            motor.move(60)
+            random_sleep_time = random.randint(1, 3)
+            time.sleep(random_sleep_time)
+
+class Sensor(object):
 
     def sensor_thread(self):  # photoresistor thread
         adc = ADC(Pin(9))
@@ -43,11 +45,8 @@ class MotorsAndSensor(object):
             time.sleep(0.5)
 
 # Create an object of the class
-my_device = MotorsAndSensor()
+motors = Motors()
+sensor = Sensor()
 
-while True:  # main loop
-    _thread.start_new_thread(my_device.step_motor_thread, ())
-    _thread.start_new_thread(my_device.servo_motor_thread, ())
-    _thread.start_new_thread(my_device.sensor_thread, ())
-    time.sleep(1)  # sleep for a second before starting new threads
-
+_thread.start_new_thread(motors.step_motor_thread, ())
+_thread.start_new_thread(motors.servo_motor_thread, ())
